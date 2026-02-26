@@ -1,0 +1,23 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; display: flex; justify-content: center; background-color: #f0f2f5; }
+.painel-aeroporto { background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); text-align: center; width: 400px; margin-top: 40px; }
+.cartao-voo { background: #f8f9fa; padding: 15px; border-radius: 10px; border-left: 5px solid #007bff; text-align: left; margin-bottom: 20px; }
+.status-box { font-weight: bold; color: #007bff; text-transform: uppercase; }
+.area-aviao {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#img-aviao {
+    transition: transform 2.5s ease-in-out, opacity 1s; 
+    position: relative;
+    z-index: 10;
+}
+.controles button { margin: 5px; padding: 10px 15px; cursor: pointer; border-radius: 5px; border: none; color: white; font-weight: bold; transition: 0.3s; }
+.btn-decolar { background-color: #28a745; }
+.btn-pousar { background-color: #dc3545; }
+.btn-altitude { background-color: #ffc107; color: black !important; }
+.btn-horario { background-color: #17a2b8; }
+button:hover { opacity: 0.8; transform: scale(1.05); }
