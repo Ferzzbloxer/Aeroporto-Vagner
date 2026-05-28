@@ -1,7 +1,7 @@
 // ==========================================
 // 1. CLASSE MAIS BAIXA (COMPONENTE): Voo
 // ==========================================
-class Voo {
+/*class Voo {
     constructor(codigo, origem, destino, horario) {
         this.codigo = codigo;
         this.origem = origem;
