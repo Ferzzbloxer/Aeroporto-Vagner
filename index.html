@@ -11,6 +11,8 @@
     <div class="painel-aeroporto">
         <h1>✈️ Painel de Controle</h1>
 
+        <h3 id="painelClima">Buscando clima...</h3>
+        
         <div style="margin-bottom: 20px;">
             <label for="seletor-voos"><strong>Selecionar Voo no Radar:</strong></label>
             <select id="seletor-voos" onchange="mudarVooSelecionado(this.value)">
@@ -36,7 +38,7 @@
             <button class="btn-horario" onclick="alterarHorario()">Mudar Horário</button>
         </div>
     </div>
-
+    <script src="clima.js"></script>
     <script type="module" src="script.js"></script>
 </body>
 </html>
