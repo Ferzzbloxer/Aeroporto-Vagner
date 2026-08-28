@@ -62,11 +62,6 @@ const torreEmergencia = new TorreDeControle();
 
 // A prova de fogo (tem que aparecer TRUE no console)
 console.log("As torres são idênticas?", torreGeral === torreEmergencia);
-// --------------------------
-
-const meuAeroporto = new Aeroporto("Afonso Pena");
-// ... (criação dos voos e inicialização da interface que você já tinha) ...
-
 // Funções para os novos botões da Torre
 window.tentarPousoGeral = function() {
     // Usa a "torreGeral"
