@@ -1,5 +1,6 @@
 import Voo from './Voo.js';
 import Aeroporto from './Aeroporto.js';
+import TorreDeControle from './Torre.js';
 
 // Inicializando o sistema do Aeroporto
 const meuAeroporto = new Aeroporto("Afonso Pena");
@@ -53,6 +54,31 @@ window.alterarHorario = function() {
     if (novo) {
         vooAtual.mudarHorario(novo);
     }
+}
+
+// --- TESTE DO SINGLETON ---
+const torreGeral = new TorreDeControle();
+const torreEmergencia = new TorreDeControle();
+
+// A prova de fogo (tem que aparecer TRUE no console)
+console.log("As torres são idênticas?", torreGeral === torreEmergencia);
+// --------------------------
+
+const meuAeroporto = new Aeroporto("Afonso Pena");
+// ... (criação dos voos e inicialização da interface que você já tinha) ...
+
+// Funções para os novos botões da Torre
+window.tentarPousoGeral = function() {
+    // Usa a "torreGeral"
+    const mensagem = torreGeral.autorizarPouso("G3-100");
+    alert(mensagem);
+}
+
+window.tentarPousoEmergencia = function() {
+    // Usa a "torreEmergencia"
+    // Como é um Singleton, se a torreGeral ocupou a pista, a de emergência saberá!
+    const mensagem = torreEmergencia.autorizarPouso("AZ-999");
+    alert(mensagem);
 }
 
 // Inicia a aplicação

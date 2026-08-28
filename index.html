@@ -37,6 +37,13 @@
             <button class="btn-altitude" onclick="chamarMetodoVoo('verAltitude')">Ganhar Altitude</button>
             <button class="btn-horario" onclick="alterarHorario()">Mudar Horário</button>
         </div>
+        
+        <div class="controles-torre" style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px;">
+            <h4>Controle de Pista</h4>
+            <button class="btn-pousar" onclick="tentarPousoGeral()">Pouso Comum</button>
+            <button class="btn-pousar" style="background-color: orange;" onclick="tentarPousoEmergencia()">Pouso Emergência</button>
+        </div>
+        <script type="module" src="script.js"></script>
     </div>
     <script src="clima.js"></script>
     <script type="module" src="script.js"></script>
