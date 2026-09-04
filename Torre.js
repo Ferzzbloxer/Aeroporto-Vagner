@@ -20,10 +20,10 @@ class TorreDeControle {
     
     autorizarPouso(codigoVoo) {
         if (this.pistaOcupada) {
-            return 'NEGADO: Pista ocupada! Voo ${codigoVoo} entre em espera.';
+            return `NEGADO: Pista ocupada! Voo ${codigoVoo} entre em espera.`;
         }
         this.pistaOcupada = true;
-        return 'Autorizado: Voo ${codigoVoo} pode pousar.'
+        return `Autorizado: Voo ${codigoVoo} pode pousar.`
     }
 
     liberarPista() {

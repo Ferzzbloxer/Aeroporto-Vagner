@@ -43,10 +43,19 @@
             <button class="btn-pousar" onclick="tentarPousoGeral()">Pouso Comum</button>
             <button class="btn-pousar" style="background-color: orange;" onclick="tentarPousoEmergencia()">Pouso Emergência</button>
         </div>
-        <script type="module" src="script.js"></script>
+
+        <div class="controles-torre" style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px;">
+            <h4>Centro de Comando (Dashboard)</h4>
+            <button id="btnAlarme" class="btn-pousar" style="background-color: #6f42c1;">Analisar Frota</button>
+        </div>
+
+        <div id="painel" style="margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px;"></div>
     </div>
+
     <script src="clima.js"></script>
     <script type="module" src="script.js"></script>
     <script type="module" src="gateControl.js"></script>
+    <script type="module" src="agenteIoT.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
